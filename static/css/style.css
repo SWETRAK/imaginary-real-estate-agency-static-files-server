@@ -32,10 +32,10 @@
 }
 
 .my-media-content {
+    width: 54%;
     display: flex;
     flex-direction: column;
     justify-content: left;
-
 }
 
 .my-city-gallery {
