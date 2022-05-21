@@ -17,7 +17,7 @@ const contactForm = (element, id) => {
         redirect: 'follow'
     };
 
-    fetch(`http://localhost:8080/api/v1/send/email/${id}`, requestOptions)
+    fetch(`https://irea-app.herokuapp.com/api/v1/send/email/${id}`, requestOptions)
         .then(response => response.text())
         .then(result => {
             // TODO: Sprawdzanie ciała result aby zobaczyć czy jest odpowiedni wynik requesta
