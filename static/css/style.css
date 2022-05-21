@@ -65,6 +65,10 @@
     flex-wrap: nowrap;
 }
 
+.my-media {
+    width: 44%;
+}
+
 .my-notifications {
     position: absolute;
     padding: 5px 5px;
