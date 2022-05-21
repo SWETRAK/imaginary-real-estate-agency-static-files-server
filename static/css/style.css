@@ -118,6 +118,10 @@
         height: 300px;
     }
 
+    .my-media {
+        width: 100%
+    }
+
     .my-400x300 {
         width: 100%;
     }
