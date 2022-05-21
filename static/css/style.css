@@ -47,7 +47,6 @@
 }
 
 .my-city-gallery-object {
-    box-sizing: border-box;
     width: 32%;
     height: 300px;
     background-size: cover;
@@ -69,13 +68,39 @@
 
 .my-notifications {
     position: absolute;
-    box-sizing: border-box;
     padding: 5px 5px;
     width: 300px;
     min-height: 100px;
     right: 0;
     top: 70px;
     z-index: 1;
+}
+
+.my-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-center {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-error-image {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.my-error-message {
+    text-align: center;
 }
 
 
@@ -87,6 +112,11 @@
 
     .my-city-gallery-object {
         width: 48%;
+    }
+
+    .my-center {
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -109,6 +139,11 @@
 
     .my-city-gallery-object {
         width: 100%;
+    }
+
+    .my-center {
+        width: 300px;
+        height: 300px;
     }
 
 }
