@@ -122,11 +122,20 @@
         height: 300px;
     }
 
+    .my-card-content {
+        flex-wrap: wrap;
+    }
+
     .my-media {
         width: 100%;
+        object-fit: cover;
     }
 
     .my-400x300 {
+        width: 100%;
+    }
+
+    .my-400x300 > img {
         width: 100%;
     }
 }
