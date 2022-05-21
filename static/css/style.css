@@ -149,6 +149,10 @@
     .my-400x300 > img {
         width: 100%;
     }
+
+    .my-media-content {
+        width: 54%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -179,6 +183,10 @@
 
     .my-400x300 {
         width: 100%;
+    }
+
+    .my-media-content {
+        width: 54%;
     }
 
 }
