@@ -2,10 +2,6 @@
     width: 50%;
 }
 
-.my-400x300 {
-    width: 100%;
-}
-
 .my-margin {
     margin: 10px 10px;
 }
@@ -33,6 +29,13 @@
 
 .my-gallery-img {
     width: 100%;
+}
+
+.my-media-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
 }
 
 .my-city-gallery {
@@ -67,6 +70,14 @@
 
 .my-media {
     width: 44%;
+}
+
+.my-400x300 {
+    width: 100%;
+}
+
+.my-400x300 > img {
+    width: 100%;
 }
 
 .my-notifications {
