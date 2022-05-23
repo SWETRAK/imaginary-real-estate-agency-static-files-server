@@ -28,7 +28,7 @@ document.getElementById("add_photo1").onchange = () => {
 
 document.getElementById("add_photo2").onchange = () => {
     const addImage2 = document.getElementById("add_photo2");
-    const addImage2Label = document.getElementById("add_image2_label");
+    const addImage2Label = document.getElementById("add_photo2_label");
     if(addImage2.files.length > 0) {
         addImage2Label.textContent = addImage2.files[0].name;
     } else {
@@ -39,7 +39,7 @@ document.getElementById("add_photo2").onchange = () => {
 
 document.getElementById("add_photo3").onchange = () => {
     const addImage3 = document.getElementById("add_photo3");
-    const addImage3Label = document.getElementById("add_image3_label");
+    const addImage3Label = document.getElementById("add_photo3_label");
     if(addImage3.files.length > 0) {
         addImage3Label.textContent = addImage3.files[0].name;
     } else {
@@ -50,7 +50,7 @@ document.getElementById("add_photo3").onchange = () => {
 
 document.getElementById("add_photo4").onchange = () => {
     const addImage4 = document.getElementById("add_photo4");
-    const addImage4Label = document.getElementById("add_image4_label");
+    const addImage4Label = document.getElementById("add_photo4_label");
     if(addImage4.files.length > 0) {
         addImage4Label.textContent = addImage4.files[0].name;
     } else {
@@ -61,7 +61,7 @@ document.getElementById("add_photo4").onchange = () => {
 
 document.getElementById("add_photo5").onchange = () => {
     const addImage5 = document.getElementById("add_photo5");
-    const addImage5Label = document.getElementById("add_image5_label");
+    const addImage5Label = document.getElementById("add_photo5_label");
     if(addImage5.files.length > 0) {
         addImage5Label.textContent = addImage5.files[0].name;
     } else {
@@ -215,19 +215,19 @@ document.getElementById("submit_button").addEventListener("click", (event) => {
     }
 
     if(addImage2.files.length === 1) {
-        formdata.append("add_photo1", addImage2.files[0], addImage2.files[0].name);
+        formdata.append("add_photo2", addImage2.files[0], addImage2.files[0].name);
     }
 
     if(addImage3.files.length === 1) {
-        formdata.append("add_photo1", addImage3.files[0], addImage3.files[0].name);
+        formdata.append("add_photo3", addImage3.files[0], addImage3.files[0].name);
     }
 
     if(addImage4.files.length === 1) {
-        formdata.append("add_photo1", addImage4.files[0], addImage4.files[0].name);
+        formdata.append("add_photo4", addImage4.files[0], addImage4.files[0].name);
     }
 
     if(addImage5.files.length === 1) {
-        formdata.append("add_photo1", addImage5.files[0], addImage5.files[0].name);
+        formdata.append("add_photo5", addImage5.files[0], addImage5.files[0].name);
     }
 
 
