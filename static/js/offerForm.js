@@ -238,7 +238,13 @@ document.getElementById("submit_button").addEventListener("click", (event) => {
     };
 
     fetch("https://irea-app.herokuapp.com/api/v1/create", requestOptions)
-        .then(response => response.text())
+        .then(response => {
+            if (response.status === 200) {
+                response.json();
+            } else {
+                return;
+            }
+        })
         .then(result => {
             console.log(result.status);
             notificationSuccess("Success. Your offer is ready");
