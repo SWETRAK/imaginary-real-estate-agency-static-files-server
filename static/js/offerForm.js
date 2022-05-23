@@ -237,7 +237,7 @@ document.getElementById("submit_button").addEventListener("click", (event) => {
         redirect: 'follow'
     };
 
-    fetch("http://localhost:8080/api/v1/create", requestOptions)
+    fetch("https://irea-app.herokuapp.com/api/v1/create", requestOptions)
         .then(response => response.text())
         .then(result => {
             console.log(result);
