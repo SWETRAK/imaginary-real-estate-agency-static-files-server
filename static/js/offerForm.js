@@ -230,13 +230,15 @@ document.getElementById("submit_button").addEventListener("click", (event) => {
         formdata.append("add_photo5", addImage5.files[0], addImage5.files[0].name);
     }
 
-
     let requestOptions = {
         method: 'POST',
         body: formdata,
         redirect: 'follow'
     };
 
+    const progressBar = document.getElementById("progress");
+
+    progressBar.classList.remove("is-hidden");
     fetch("https://irea-app.herokuapp.com/api/v1/create", requestOptions)
         .then(response => {
             if (response.status === 200) {
@@ -246,10 +248,22 @@ document.getElementById("submit_button").addEventListener("click", (event) => {
             }
         })
         .then(result => {
-            console.log(result.status);
+            progressBar.classList.add("is-hidden");
+
+            document.getElementById("title").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("price").value ="";
+            document.getElementById("area").value = "";
+            document.getElementById("bedrooms").value = 1;
+            document.getElementById("bathrooms").value = 1;
+            document.getElementById("description").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("terms").checked = false;
+
             notificationSuccess("Success. Your offer is ready");
         })
         .catch(error => {
+            progressBar.classList.add("is-hidden");
             notificationDanger("Ups. Something went wrong. Try later or consult with your network administrator");
 
         });
